@@ -1,24 +1,25 @@
+
 body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
 
-.controller.fight-stick {
+.controller.custom {
     background: url(https://i.imgur.com/TNKKLVM.png) center no-repeat;
     height: 530px;
     width: 1500px;
 }
 
-.fight-stick .back {
+.custom .back {
     position: absolute;
     bottom: -5px;
     left: 610px;
 }
 
-.fight-stick .start {
+.custom .start {
     position: absolute;
     bottom: -5px;
     left: 701px;
 }
 
-.fight-stick .back, .fight-stick .start, .fight-stick .stick.left {
+.custom .back, .custom .start, .custom .stick.left {
     width: 70px;
     height: 70px;
     background: #333333;
@@ -26,7 +27,7 @@ body { background-color: rgba(0, 0, 0, 0); margin: 0px auto; overflow: hidden; }
     border-radius: 100%;
 }
 
-.fight-stick .back.pressed, .fight-stick .start.pressed, .fight-stick .stick.right.pressed, .fight-stick .stick.left.pressed {
+.custom .back.pressed, .custom .start.pressed, .custom .stick.right.pressed, .custom .stick.left.pressed {
     transform: translateY(5px);
     -webkit-filter: brightness(0%) invert(1);
 }
@@ -43,43 +44,43 @@ span.stick.left {
     left: 659px;
 }
 
-.fight-stick .quadrant {
+.custom .quadrant {
     display: none;
 }
 
-.fight-stick .fstick {
+.custom .fstick {
     display: none;
 }
 
-.fight-stick .a {
+.custom .a {
     bottom: -5px;
     left: 376px;
     background: aqua;
     -webkit-filter: brightness(50%)
 }
 
-.fight-stick .b {
+.custom .b {
     bottom: 60px;
     right: -345px;
     background: yellow;
     -webkit-filter: brightness(50%)
 }
 
-.fight-stick .x {
+.custom .x {
     top: 70px;
     left: 409px;
     background: aqua;
     -webkit-filter: brightness(50%)
 }
 
-.fight-stick .y {
+.custom .y {
     right: -378px;
     top: 4px;
     background: yellow;
     -webkit-filter: brightness(50%)
 }
 
-.fight-stick .trigger-button.right {
+.custom .trigger-button.right {
     position: absolute;
     right: 203px;
     top: 5px;
@@ -88,7 +89,7 @@ span.stick.left {
     -webkit-filter: brightness(50%) 
 }
 
-.fight-stick .bumper.right {
+.custom .bumper.right {
     position: absolute;
     right: 172px;
     top: 2px;
@@ -97,22 +98,22 @@ span.stick.left {
     -webkit-filter: brightness(50%)
 }
 
-.fight-stick .bumper.pressed {
+.custom .bumper.pressed {
     transform: translateY(5px);
     -webkit-filter: brightness(0%) invert(1)
 }
 
-.fight-stick .trigger-button.pressed {
+.custom .trigger-button.pressed {
     transform: translateY(5px);
     -webkit-filter: brightness(0%) invert(1)
 }
 
-.fight-stick .button.pressed {
+.custom .button.pressed {
     transform: translateY(5px);
     -webkit-filter: brightness(0%) invert(1)
 }
 
-.fight-stick .stick.right {
+.custom .stick.right {
     width: 70px;
     height: 70px;
     background: orange;
@@ -120,7 +121,7 @@ span.stick.left {
     border-radius: 100%;
 }
 
-.fight-stick .face.up {
+.custom .face.up {
     width: 123px;
     height: 123px;
     background: #333333;
@@ -132,7 +133,7 @@ span.stick.left {
     left: 493px;
 }
 
-.fight-stick .face.right {
+.custom .face.right {
     width: 123px;
     height: 123px;
     background: #333333;
@@ -144,7 +145,7 @@ span.stick.left {
     left: 485px;
 }
 
-.fight-stick .face.down {
+.custom .face.down {
     width: 123px;
     height: 123px;
     background: #333333;
@@ -156,7 +157,7 @@ span.stick.left {
     left: 352px;
 }
 
-.fight-stick .face.left {
+.custom .face.left {
     width: 123px;
     height: 123px;
     background: #333333;
@@ -168,7 +169,7 @@ span.stick.left {
     left: 185px;
 }
 
-.fight-stick .face.pressed {
+.custom .face.pressed {
     transform: translateY(5px);
     -webkit-filter: brightness(0%) invert(1);
 }
