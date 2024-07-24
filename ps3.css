@@ -16,7 +16,7 @@ NOTE: If you're using gist, MAKE SURE TO NAME YOUR CSS FILE!
 It doesn't matter what you call it, so long as it ends in .css
 else the site won't read it and think it's just a plain text.
 
-Each CSS entry must be preceded by '.custom' since that's the 
+Each CSS entry must be preceded by '.ps' since that's the 
 hardcoded class for a custom style. It doesn't make sense to 
 change this as you can only have one custom skin loaded at a time.
 
@@ -37,7 +37,7 @@ do so via my paypal: https://paypal.me/mrmcpowned
 
 /*BEGIN PS3 Controller Styling*/
 /*This class defines the base attributes of the skin*/
-.controller.custom{
+.controller.ps{
     /* The background image is basically the base for the controller's skin. The 
     PS3 controller's skin can be found at http://mrmcpowned.com/gamepad/ps3-assets/base.png
     and you can observe it as an example. The sticks, buttons, and directional arrows are missing
@@ -47,20 +47,20 @@ do so via my paypal: https://paypal.me/mrmcpowned
     height: 558px;
     width: 784px;
 }
-.custom.disconnected { /* This class shows an image when the controller is disconnected */
+.ps.disconnected { /* This class shows an image when the controller is disconnected */
     background: url(ps3-assets/base-disconnect.png);
 }
 /* This hides the controller's button when disconnected so only the background image remains */ 
-.custom.disconnected div {
+.ps.disconnected div {
     display: none;
 }
-.custom .triggers{ /* The triggers are housed inside a div, so this sizes the div properly and positions it */
+.ps .triggers{ /* The triggers are housed inside a div, so this sizes the div properly and positions it */
     width: 586px;
     height: 65px;
     position: absolute;
     left: 99px;
 }
-.custom .trigger{/* These are the actual triggers themselves */
+.ps .trigger{/* These are the actual triggers themselves */
     width:86px;
     height:65px;
     background: url(ps3-assets/triggers.png);
@@ -70,32 +70,32 @@ do so via my paypal: https://paypal.me/mrmcpowned
 within the div they're contained in. Since their positions is realtive
 to the size of the parent element, we simply resize the parent element 
 above to achieve the desired position. */
-.custom .trigger.left{ 
+.ps .trigger.left{ 
     float: left;
 }
-.custom .trigger.right{
+.ps .trigger.right{
     float: right;
 }
 
 /* The bumpers follow the same methodology as the triggers in terms of
 placement EDITED BY KURT MADE WIDTH 200 instead of 89*/
-.custom .bumper{
+.ps .bumper{
     width: 200px;
     height: 280px;
     background: url(ps3-assets/bumpers.png);
     opacity: 0;
 }
-.custom .bumpers{
+.ps .bumpers{
     position: absolute;
     width: 800px;
     height: 200px;
     left: 200px;
     top: 200px;
 }
-.custom .bumper.pressed{ /* The '.pressed' class is used for most buttons to signify they've been pressed */
+.ps .bumper.pressed{ /* The '.pressed' class is used for most buttons to signify they've been pressed */
     opacity: 1;
 }
-.custom .bumper.left{
+.ps .bumper.left{
   /* Call me lazy or smart, but why should I make 2 bumpers when they're symmetrical
   and I can just rotate them in the browser? Also, note that you most likely won't need
   to use a browser speficic prefix unless it's something that is indeed browser specific.
@@ -104,14 +104,14 @@ placement EDITED BY KURT MADE WIDTH 200 instead of 89*/
     transform: rotateY(180deg);
     float: left;
 }
-.custom .bumper.right{
+.ps .bumper.right{
     float: right;
 }
 /* This bit of code is for the player indicator, which is represented in
 quandrants on the xbox controller. That's note what it's called on the
 PS3 controller but it'd be pointless for me to change the HTML for 
 something as pedantic as a name. */
-.custom .quadrant{
+.ps .quadrant{
     position: absolute;
     background: url(ps3-assets/player-n.png);
     height: 17px;
@@ -122,21 +122,21 @@ something as pedantic as a name. */
 /* Since the player indicator is just a CSS sprite, we change the 
 position of the background to match the player number.
 NOTE: Player orderin starts at 0, so p0 = Player 1 */
-.custom .p0{
+.ps .p0{
     background-position: 0 -6px;
 }
-.custom .p1{
+.ps .p1{
     background-position: 0 -28px;
 }
-.custom .p2{
+.ps .p2{
     background-position: 0 -49px;
 }
-.custom .p3{
+.ps .p3{
     background-position: 0 -70px;
 }
 /* This is to size and position the containing div for the 
 start and select buttons. */
-.custom .arrows{
+.ps .arrows{
     position: absolute;
     width: 100px;
     height: 200px;
@@ -144,26 +144,26 @@ start and select buttons. */
     left: 100px;
 }
 /* Setting the size and CSS sprite for the start adn select buttons */
-.custom .back, .custom .start{
+.ps .back, .ps .start{
     background: url(ps3-assets/menus.png);
     width: 34px;
     height: 19px;
 }
-.custom .back.pressed, .custom .start.pressed{
+.ps .back.pressed, .ps .start.pressed{
     background-position-y: -21px;
     margin-top: 2px;
 }
-.custom .back{
+.ps .back{
     float: left;
     width: 38px;
 }
-.custom .start{
+.ps .start{
     float: right;
     width: 36px;
     background-position: 37px 0;
 }
 /* Positioning and size of the container for the face buttons */
-.custom .abxy{
+.ps .abxy{
     position: absolute;
     width: 100px;
     height: 100px;
@@ -171,105 +171,105 @@ start and select buttons. */
     left: 400px;
 }
 /* base class used to simplify the sprite mapping */
-.custom .button{
+.ps .button{
     position: absolute;
     width:62px;
     height:62px;
     background: url(ps3-assets/face-buttons.png);
 }
-.custom .button.pressed{
+.ps .button.pressed{
     background-position-y: -64px;
     margin-top: 5px;
 }
-.custom .a{
+.ps .a{
     background-position: 62px 0;
     top: 142px;
     left: 71px;
 }
-.custom .b{
+.ps .b{
     background-position: 125px 0;
     top: 71px;
     right: 0px;
 }
-.custom .x{
+.ps .x{
     background-position: 0 0;
     top: 71px;
 }
-.custom .y{
+.ps .y{
     background-position: -63px 0;
     left: 71px;
 }
 /* Analog sticks follow the same principles as the triggers in terms of positioning
 Note that the rotation of the sticks in hard coded with javascript, so it applies 
 the CSS inline. */
-.custom .sticks{
+.ps .sticks{
     position: absolute;
     width: 364px;
     height: 105px;
     top: 328px;
     left: 210px;
 }
-.custom .stick{
+.ps .stick{
     position: absolute;
     background: url(ps3-assets/thumbs.png);
     height:105px;
     width: 105px;
 }
-.custom .stick.pressed.left{
+.ps .stick.pressed.left{
     background-position-x: -106px;
 }
-.custom .stick.pressed.right{
+.ps .stick.pressed.right{
     background-position-x: -211px;
 }
-.custom .stick.left{
+.ps .stick.left{
     top: 0;
     left: 0;
 }
-.custom .stick.right{
+.ps .stick.right{
     top: calc(100% - 105px);
     left: calc(100% - 105px);
 }
 /* Dpad possitioning and sizing */
-.custom .dpad{
+.ps .dpad{
     position: absolute;
     width: 140px;
     height: 132px;
     top: 192px;
     left: 74px;
 }
-.custom .face{
+.ps .face{
     background: url(ps3-assets/dpad.png);
     position: absolute;
 }
-.custom .face.up, .custom .face.down{
+.ps .face.up, .ps .face.down{
     width: 38px;
     height: 52px;
 }
-.custom .face.left, .custom .face.right{
+.ps .face.left, .ps .face.right{
     width: 52px;
     height: 38px;
 }
-.custom .face.up{
+.ps .face.up{
     left: 50px;
     top: 0;
     background-position: 92px 0px;
 }
-.custom .face.down{
+.ps .face.down{
     left: 50px;
     top: 79px;
     background-position: 131px 0;
 }
-.custom .face.left{
+.ps .face.left{
     top: 47px;
     left: 0;
     background-position: 0px 0;
 }
-.custom .face.right{
+.ps .face.right{
     top: 47px;
     right: 0px;
     background-position: 53px 0;
 }
-.custom .face.pressed{
+.ps .face.pressed{
     margin-top: 5px;
     background-position-y: 52px;
 }
@@ -278,16 +278,16 @@ exist for the purpose of displaying a fightstick. Since fightsticks have
 the left and right triggers and digital buttons, there are separate 
 html items that allow the triggers to be shown as button presses isntead of
 an opacity setting */
-.custom .trigger-button.left{
+.ps .trigger-button.left{
     
 }
-.custom .trigger-button.right{
+.ps .trigger-button.right{
     
 }
-.custom .trigger-button.left.pressed{
+.ps .trigger-button.left.pressed{
     
 }
-.custom .trigger-button.right.pressed{
+.ps .trigger-button.right.pressed{
     
 }
 /* This is where the fight stick CSS would go. The ideal way of 
