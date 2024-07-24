@@ -87,10 +87,10 @@ placement EDITED BY KURT MADE WIDTH 200 instead of 89*/
 }
 .custom .bumpers{
     position: absolute;
-    width: 586px;
-    height: 28px;
-    left: 99px;
-    top: 72px;
+    width: 800px;
+    height: 200px;
+    left: 200px;
+    top: 200px;
 }
 .custom .bumper.pressed{ /* The '.pressed' class is used for most buttons to signify they've been pressed */
     opacity: 1;
