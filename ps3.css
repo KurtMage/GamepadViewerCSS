@@ -81,7 +81,7 @@ above to achieve the desired position. */
 placement EDITED BY KURT MADE WIDTH 200 instead of 89*/
 .custom .bumper{
     width: 200px;
-    height: 28px;
+    height: 280px;
     background: url(ps3-assets/bumpers.png);
     opacity: 0;
 }
