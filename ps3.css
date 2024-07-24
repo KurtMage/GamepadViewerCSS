@@ -165,10 +165,10 @@ start and select buttons. */
 /* Positioning and size of the container for the face buttons */
 .custom .abxy{
     position: absolute;
-    width: 204px;
-    height: 205px;
-    top: 156px;
-    left: 538px;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 400px;
 }
 /* base class used to simplify the sprite mapping */
 .custom .button{
