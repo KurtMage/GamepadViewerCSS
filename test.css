@@ -6,8 +6,4 @@
 .edit {
     animation: colorhue 1s linear infinite;
 }
-.edit .fight-stick .a {
-    bottom: 10px;
-    left: 10px;
-    background: aqua;
-}
+
